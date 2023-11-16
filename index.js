@@ -12,13 +12,13 @@ formElement.addEventListener('submit', (event) => {
     const wrapperTodoElement = document.querySelector('.wrapper-todo');
 
     // membuat todo item di js
-    // const todoItem = `<li class="todo-item">${inputElement.value}</li>`;
-    const todoItem = document.createElement('li');
-    todoItem.innerHTML = inputElement.value;
+    const todoItem = `<li class="todo-item">${inputElement.value}</li>`;
+    // const todoItem = document.createElement('li');
+    // todoItem.innerHTML = inputElement.value;
 
     // menambahkan todo item ke dalam wrapper todo
-    // wrapperTodoElement.innerHTML = todoList;
-    wrapperTodoElement.append(todoItem);
+    wrapperTodoElement.innerHTML = todoItem;
+    // wrapperTodoElement.append(todoItem);
 
     // menghapus value setelah submit
     inputElement.value = '';
